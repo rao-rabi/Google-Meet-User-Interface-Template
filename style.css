@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   display: flex;
+    background-color: black;
+}
+
+.persons{
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 1.5%;
+    padding-left: 1%;
+}
+.item{
+    height: 43vh;
+    width: 24vw;
+    background-color: rgb(75, 74, 74);
+    border-radius: 2%;
+    position: relative;
+}
+.item img {
+    position:absolute;
+    width: 17vh;
+    border-radius: 100%;
+    left: 35%;
+    top: 29%;
+}
+.item h4{
+    position: absolute;
+    color: white;
+    bottom: 2%;
+    left: 2%;
+}
+.item i{
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(48, 42, 42);
+    left: 87%;
+    top: 3%;
+    border-radius: 50%;
+    padding: 2.5% 3%;
+}
+#dots{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(14, 44, 192);
+    left: 87%;
+    top: 3%;
+    border-radius: 50%;
+    padding: 2.5% 3%;
+}
+.circle{
+    box-shadow:0px 0px 10px 25px rgb(113, 116, 116); 
+}
+
+/* people */
+
+.people{
+    background-color: white;
+    width: 23vw;
+    height: 90vh;
+    margin: 1% 1% 1% 0%;
+    border-radius: 2%;
+}
+.people p{
+    font-size: 20px;
+    padding: 2%;
+}
+.people div{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+}
+.search{
+    width: 25vw;
+    height: 3vw;
+    font-size: 2vh;
+    font-weight: 700;
+}
+.people-names{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    justify-content: space-between;
+    margin-bottom: -10%;
+}
+.name div img{
+    border-radius: 50%;
+    width: 5vh;
+}
+.name div h4{
+    padding-top: 8%;
+}
+.name-icon{
+    width:2vw;
+    position: relative;
+}
+.name-icon i{
+    position: absolute;
+}
+#name-dot{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(14, 14, 192);
+    border-radius: 50%;
+}
+#name-icon2{
+    left: 70%;
+}
+
+
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    padding: 1%;
+    top: 100%;
+}
+.footer-text{
+    color: white;
+}
+.icons-foot{
+    width: 45vw;
+}
+.icons-foot i{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(48, 42, 42);
+    border-radius: 50%;
+    padding: 2.5% 3%;
+}
+#camera{
+    background-color: red;
+}
+.activity-icon i{
+    font-size: 27px;
+    color: white;
+    padding-left: 15px;
+}
+#trans-people{
+    color: rgb(31, 132, 190);
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+    .persons{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding-top: 2%;
+        padding-left: 1%;
+    }
+    .item{
+        height: 43vh;
+        width: 98vw;
+        background-color: rgb(75, 74, 74);
+        border-radius: 2%;
+        position: relative;
+        margin-bottom: 5%;
+    }
+    .people{
+        display: none;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .icons-foot{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 740px){
+    .footer-text{
+        width: 100vw;
+        margin-left: 25%;
+    }
+    .icons-foot{
+        margin-top: 8%;
+        margin-bottom: 5%;
+        width: 100vw;
+        font-size: 0rem;
+    }
+    .activity-icon{
+        margin-left: 20%;
+    }
+}
