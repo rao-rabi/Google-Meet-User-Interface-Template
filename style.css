@@ -22,6 +22,10 @@
     border-radius: 2%;
     position: relative;
 }
+.item:hover{
+    cursor: pointer;
+    border: 5px solid rgb(48, 131, 240);
+}
 .item img {
     position:absolute;
     width: 17vh;
@@ -99,6 +103,7 @@
 }
 .name div h4{
     padding-top: 8%;
+    padding-left: 15px;
 }
 .name-icon{
     width:2vw;
